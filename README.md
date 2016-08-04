@@ -1,6 +1,6 @@
 # Rain or No Rain
 
-Is it raining where you are? [Here's a website](https://chickenroyal.co.uk/rain) that'll tell you.
+Is it raining where you are? [Here's a website](https://chickenroyal.co.uk/rain) that'll tell you. How else are you meant to find out?
 
 ## APIs used
 
