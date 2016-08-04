@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+  <head>
+      <meta charset="utf-8">
+      <title>Rain or No Rain</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="description" content="Is it raining where you are?">
+      <meta name="author" content="Andrew Royal">
+      <link href="css/styles.min.css" rel="stylesheet" type="text/css">
+      <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+      <link rel="manifest" href="/manifest.json">
+      <meta name="theme-color" content="#b0dbf9">
+  </head>
+  <body>
+    @@include('app/svg-sprite/symbol-defs.svg')
+    <div class="container">
+      <svg viewbox="0 0 32 32" class="weather-icon hide" id="rain">
+        <use xlink:href="#icon-rain"></use>
+      </svg>
+      <svg viewbox="0 0 32 32" class="weather-icon hide" id="norain">
+        <use xlink:href="#icon-norain"></use>
+      </svg>
+      <p id="weather-message">Getting weather data for your location...</p>
+    </div>
+    <p class="data">Weather by <a href="http://forecast.io/">Forecast</a>. Location by <a href="https://developers.google.com/maps/documentation/geocoding/start">Google</a>.</p>
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  	<script src="js/rain.min.js"></script>
+  </body>
+</html>
