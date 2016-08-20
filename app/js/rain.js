@@ -61,6 +61,6 @@ $(function() {
     weather.innerHTML = "Geolocation is not supported by your browser.";
     return;
   } else {
-    navigator.geolocation.getCurrentPosition(success, error);
+    navigator.geolocation.getCurrentPosition(success, error, { enableHighAccuracy: true });
   }
 });
