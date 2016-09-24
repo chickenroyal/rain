@@ -7,7 +7,7 @@ function success(position) {
   longitude = position.coords.longitude;
 
   // Forecast.io weather data
-  forecastURL = 'https://api.forecast.io/forecast/' + f + '/' + latitude + ',' + longitude;
+  forecastURL = 'https://api.darksky.net/forecast/' + f + '/' + latitude + ',' + longitude;
   $.ajax({
     dataType: "jsonp",
     url: forecastURL,
